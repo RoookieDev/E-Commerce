@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        padding: 0px;
+        margin: 0;
+        background: white;
+        font-family: 'poppins',sans-serif;
+
+    }
+    .slider-con{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        align-items: center;
+        padding: 0px 20px;
+    
+    }
+
+    .slider-con .main-frame{
+        position: relative;
+        width: 100%;
+        height:100%;
+        display: flex;
+        scroll-behavior: smooth;
+        align-items: center;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    .slider-con .main-frame img{
+        position: relative;
+        min-width: 400px;
+        height: 200px;
+        object-fit: contain; 
+        transition: 0.3s ease-in;
+    }
+
+    .active_img{
+        transform: scale(1.4);
+    }
+   
+</style>
+<body>
+    <div class="slider-con">
+        <div class="main-frame">
+            <img   src="assests/img/png/shoes/shoes-4.png" class="image_data active_img" alt="" width="100px">
+            <img  class="image_data" src="assests/img/png/shoes/adidas-2.png" alt="" width="100px">
+            <img  class="image_data" src="assests/img/png/shoes/adidas-3.png" alt="" width="100px">
+            <img  class="image_data" src="assests/img/png/shoes/adidas-4 1.png" alt="" width="100px">
+            <img  class="image_data" src="assests/img/png/shoes/adidas-4.png" alt="" width="100px">
+            <img  class="image_data" src="assests/img/png/shoes/adidas-5.png" alt="" width="100px">
+            <img  class="image_data" src="assests/img/png/shoes/shoes-2.png" alt="" width="100px">
+        </div>
+
+    </div>
+
+
+    <script>
+        var img_con = document.querySelector(".image_data");
+        var width = img_con.clientWidth;
+        var con = document.querySelector(".main-frame");
+
+        function NextImg(){
+            con.scrollLeft = con.scrollLeft+width
+        }
+
+        setInterval("NextImg()", 500);
+
+
+    </script>
+</body>
+</html>

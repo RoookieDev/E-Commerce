@@ -1,0 +1,215 @@
+@media (max-width:786px){
+    
+    .top-menu{
+        height: 100%;
+        padding: 0px;
+    }
+    .menu-logo{
+        height: 100%;
+        text-align: left;
+    }
+    .top-menu .logo{
+       margin-bottom: 15px;
+       padding-top: 10px;
+    }
+    .top-menu .logo h4{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .top-menu .logo h4 i{
+        display: block;
+    }
+    
+    .top-menu .menu ul{
+        text-align: center;
+    }
+
+
+    
+    
+    .menu-item ul{
+        display: none;
+    }
+    .menu-item .show_menu{
+        display: block;
+    }
+    /* menu-item end here */
+
+
+
+    .category{
+        padding: 0;
+    }
+    .category .container-fluid{
+        padding: 0;
+    }
+
+    .category .card-bx .card img{
+        width: 40%;
+    }
+    .category .card-bx .card .text-bx{
+        width: 60%;
+    }
+    .category .card-bx .card .text-bx h1{
+        font-size: 2em;
+    }
+
+    .category .card-bx:nth-child(5) .card{
+        flex-direction: column-reverse;
+    }
+    .category .card-bx:nth-child(5) .card .text-bx{
+        width: 100%;
+    }
+    .category .card-bx:nth-child(5) img{
+        width: 100%;
+    }
+    /* category end here */
+
+
+    .shoes-col h1{
+        font-size: 2em;
+    }
+    .shoes-col h4{
+        font-size: 1.4em;
+    }
+    /* shoes-col end here */
+
+
+
+    
+    .banner-con .text-bx{
+        padding: 30px 30px;
+    }
+    .banner-con .text-bx h2{
+        text-align: left;
+    }
+    /* banner-col end here */
+
+
+    .clothes{
+        padding: 0 0px;
+    }
+    .clothes .container .card-bx .card{
+        flex-direction: column;
+    }
+    .clothes .container .card-bx .card .text-bx{
+        padding: 10px;
+    }
+    .clothes .container .card-bx .card .text-bx h1{
+        font-size: 3em;
+    }
+
+    .clothes-bx .containers .card-bx{
+        margin-bottom: 20px;
+        height: auto;
+    }
+    /* clothes end here */
+
+    .offer-banner{
+        height: auto;
+        padding: 10px 20px;
+    }
+    .offer-banner .container{
+        padding: 0;
+    }
+    .offer-banner .container h2{
+        font-size: 1.2em;
+    }
+    .offer-banner .container h1{
+        font-size: 2.5em;
+    }
+    .offer-banner .container h3{
+        font-size: 1.2em;
+    }
+    .offer-banner .container .clock{
+        margin: 10px 0px;
+    }
+    .offer-banner .container .clock h5{
+        font-size: 1em;
+    }
+    .offer-banner .container .clock h5 span{
+        font-size: 1em;
+    }
+
+    /* offer-banner end here */
+
+    .offer-products{
+        padding: 10px 0px;
+    }
+    .offer-products .container-fluid{
+        padding: 0;
+    }
+    .offer-products .card-bx{
+        padding: 10px;
+    }
+    .offer-products .card-bx .card{
+        flex-direction: column;
+    }
+    .offer-products .card-bx .card::before{
+        width: 100%;
+        height: 80%;
+        bottom: 0;
+    }
+    .offer-products .card-bx .card .img-bx,
+    .offer-products .card-bx .card .text-bx
+    {
+        width: 100%;
+    }
+    .offer-products .card-bx .card .img-bx{
+        height: 200px;
+        border-radius: 10px;
+        box-shadow: none;
+    }
+
+    /* offer-products end here */
+
+    .sofa-banner{
+        padding: 10px 0px;
+    }
+    .sofa-banner .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+
+    .sofa-banner  .text-bx h3{
+        font-size: 1em;
+    }
+    .sofa-banner  .text-bx h1{
+        font-size: 3em;
+        -webkit-text-stroke-width: 0px;
+        color: black;
+    }
+    .sofa-banner .img-bx{
+        width: 100%;
+        padding: 0;
+    }
+    .sofa-banner .img-bx img{
+        height: auto;
+    }
+    .sofa-banner .img-bx .img-carousel img{
+        width: 100px;
+    }
+
+    /* sofa-banner end here */
+
+    .testimonial{
+        padding-bottom: 0;
+    }
+    .testimonial h2{
+        font-size: 2em;
+        font-weight: 500;
+    }
+    .testimonial .container-fluid{
+        padding: 0;
+    }
+    .testimonial .carousel-box{
+        gap: 0px;
+    }
+    .testimonial .carousel-box .card{
+        min-width: 100%;
+        max-width: 100%;
+    }
+}

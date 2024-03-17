@@ -1,0 +1,684 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+h1, h2, h3,h4, h5, h6, p, label, ul, .row{
+    padding: 0;
+    margin: 0;
+}
+
+.top-menu{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #111;
+    color: white;
+}
+.menu_logo{
+    position: relative;
+    width: 100%;
+    height: 11%;
+    display: grid;
+    align-content: center;
+}
+
+.top-menu .logo{
+    position: relative;
+    width: 100%;
+    display: grid;
+    align-content: center;
+
+}
+
+.top-menu .logo h4{
+    position: relative;
+    width: 100%;
+    font-size: 1.6em;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* logo end here */
+.top-menu .menu{
+    position: relative;
+    width: 100%;
+    
+    display: grid;
+    align-content: center;
+}
+.top-menu .menu ul{
+    text-align: right;
+    list-style: none;
+    margin: 0;
+}
+.top-menu .menu ul li{
+    display: inline-block;
+    padding: 0px;
+}
+.top-menu .menu ul li a,.top-menu .menu ul li button{
+    position: relative;
+    display: inline-block;
+    color: white;
+    padding: 20px 20px;
+    background: none;
+    text-decoration: none;
+    transition: 0.3s all;
+}
+.top-menu .menu ul li a:hover{
+    background: #000;
+}
+.top-menu .menu ul li button{
+    background:none;
+    border: none;
+    outline: none;
+    display: block;
+    
+}
+.top-menu .menu ul li button::before{
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background: dodgerblue;
+    transition: 0.3s ease;
+}
+.top-menu .menu ul li button:active{
+    transform: scale(0.97);
+}
+.top-menu .menu ul li button:hover:before{
+    width: 100%;
+}
+
+/* menu end here */
+
+
+.top-menu .search-bx{
+    position: relative;
+    width: 100%;
+    display: grid;
+    align-content: center;
+    
+}
+.top-menu .search-bx .box{
+    position: relative;
+    width: 100%;
+    border: 1.5px solid #aaa;
+    display: flex;
+}
+.top-menu .search-bx .box input{
+    position: relative;
+    width: 100%;
+    padding:7px 10px;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+}
+.top-menu .search-bx .box button{
+    background: none;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    background: #aaa;
+    
+}
+
+/* search-bx end here */
+
+.menu-item{
+    position: relative;
+    width: 100%;
+    height: 10%;
+    padding: 10px;
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+
+.menu-item ul{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    
+}
+.menu-item ul li{
+    display: inline-block;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+/* menu-item end here */
+/*============================== top-menu end here===================================== */
+
+#slider{
+    position: relative;
+    width: 100%;
+    height: 79%;
+    overflow-x: hidden;
+    color: black;
+}
+
+#slider .slide_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s all ease-in-out;
+    text-align: center;
+    justify-items: center;
+    padding: 20px 0px;
+    display: grid;
+    align-content: center;
+}
+#slider .slide_img img{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+#slider .slide_img:nth-child(1){
+    background: rgb(255, 255, 161);
+}
+#slider .slide_img:nth-child(2){
+    background: greenyellow;
+}
+#slider .slide_img:nth-child(3){
+    background: yellowgreen;
+}
+
+#slider .slide_img h1{
+    position: relative;
+    width: 100%;
+    font-size: 5em;
+    text-align: center;
+    font-weight: 800;
+    font-family: 'poppins',sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    color: rgba(0,0,0,0.8);
+    
+    
+}
+#slider .slide_img h4{
+    position: relative;
+    font-size: 2em;
+    font-weight: 400;
+    font-family: 'satisfy',sans-serif;
+    
+}
+/* #slider .slide_img video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+@keyframes move {
+    0%,100%{
+        left: 10%;
+        transform: translate(-10%,-80%);
+    }
+    50%{
+        left: 90%;
+        transform: translate(-90%,-80%);
+    }
+} */
+
+#slider .slide_img #bg-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    object-position: bottom;
+    display: none;
+}
+
+#prevBtn, #nextBtn{
+    position:absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+    padding: 0px;
+    
+    top: 50%;
+    transform: translate(0,-50%);
+    border-radius: 100%;
+    border: none;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    outline: none;
+}
+#prevBtn{
+    left: 30px;
+}
+#nextBtn{
+    right: 30px;
+}
+#prevBtn:active{
+    background: black;
+}
+#slider .img-bx{
+    position: relative;
+    width: 100%;
+}
+
+/*================= slider end here =====================================*/
+
+
+.category{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px;
+    background:white;
+}
+
+.category .card-bx{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+}
+.category .card-bx .card{
+    position: relative;
+    padding: 10px;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    text-align: center;
+    perspective: 1000px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;   
+    flex-direction: row;
+    align-items: center;
+    background: rgb(250, 250, 250);
+}
+.category .card-bx .card img{
+    position: relative;
+    width: 50%;
+    height: 200px;
+    object-fit: contain;
+    padding: 15px;
+}
+.category .card-bx .card .text-bx{
+    position: relative;
+    width: 50%;
+    height: auto;
+    padding: 20px 20px;
+    transition: 0.3s ease-in;
+    text-align: left;
+    display: grid;
+    align-content: center;
+    justify-items: start;
+}
+.category .card-bx .card:hover .text-bx{
+    opacity: 1;
+}
+
+.category .card-bx .card .text-bx h4{
+    position: relative;
+    font-size: 1.3em;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.category .card-bx .card .text-bx h1{
+    position: relative;
+    width: 100%;
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.category .card-bx .card .text-bx button{
+    position: relative;
+    width: auto;
+    padding: 7px 10px;
+    border: none;
+    background: black;
+    color: white;   
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    border-radius: 5px;
+}
+
+/*========= category end here================================================= */
+
+
+
+
+.shoes-col{
+    position: relative;
+    width: 100%;
+    background:rgb(255, 255, 255);
+    padding: 30px 20px;
+}
+.shoes-col h4{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    text-transform: capitalize;
+    font-family: 'satisfy',sans-serif;
+    color: #222;
+    
+}
+.shoes-col h1{
+    position: relative;
+    text-align: center;
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 700;
+    color: #aa001d;
+
+}
+
+.shoes-col .card-bx{
+    position: relative;
+    width: 100%;
+    padding: 10px 20px;
+}
+.shoes-col .card-bx .card{
+    position: relative;
+    width: 100%;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+}
+
+.shoes-col .card-bx .card .img-bx{
+    position: relative;
+    width: 100%;
+    height:100%;
+    background: #ffd845;
+    display: grid;
+    align-content:center;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+}
+.shoes-col .card-bx:nth-child(2) .card .img-bx{
+    background: #efaea2;
+}
+.shoes-col .card-bx:nth-child(3) .card .img-bx{
+    background:#2677b1;
+}
+
+.shoes-col .card-bx .card .img-bx img{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+}
+.shoes-col .card-bx .card .text-bx{
+    position: relative;
+    width: 100%;
+    padding:20px 15px;
+    text-align: center;
+    background: whitesmoke;
+    border-radius: 0px 0px 10px 10px;
+}
+.shoes-col .card-bx .card:hover  .btn-bx{
+    opacity: 1;
+    right: -30px;
+}
+.shoes-col .card-bx .card .text-bx h3{
+    position: relative;
+    width: 100%;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.shoes-col .card-bx .card .text-bx p{
+    width: 100%;
+    font-size: 1em;
+    word-wrap: break-word;
+    margin-bottom: 0px;
+}
+.shoes-col .card-bx .card  .btn-bx{
+    position: absolute;
+    height: 100%;
+    right: 20px;
+    top: 0;
+    display: grid;
+    align-content: center;
+    padding: 10px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.shoes-col .card-bx .card  .btn-bx button{
+    position: relative;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    margin-bottom: 10px;
+    background: rgba(0,0,0,1);
+    color: white;
+    outline: none;
+    transition: ease all 0.3s;
+}
+.shoes-col .card-bx .card  .btn-bx button:hover{
+    background: green;
+}
+/* shoes-col end here======================================================================= */
+
+.banner-col {
+    position: relative;
+    width: 100%;
+    padding: 20px 0px;
+    background: rgb(240, 240, 240);
+}
+.banner-col .banner-con{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding: 0px 0px;
+    display: grid;
+    align-content: center;
+    margin-bottom: 10px;
+}
+.banner-con .text-bx{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    align-content: center;
+    justify-items: start;
+    padding: 10px 40px;
+    background: #4c0778;
+    color: white;
+}
+.banner-con .text-bx h2{
+    position: relative;
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'montserrat',sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.banner-con .text-bx h5{
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: 400;
+    
+}
+.banner-con .text-bx p{
+    position: relative;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.banner-con .text-bx button{
+    position: relative;
+    padding: 10px 15px;
+    border: 1.5px solid white;
+    background: none;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s all;
+}
+.banner-con .text-bx button:hover{
+    background: white;
+    color: #4c0778;
+}
+
+.banner-con .img-bx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.banner-con .img-bx img{
+    position: relative;
+    width: 100%;
+    height:500px;
+    object-fit: contain;
+}
+/* banner-con end here */
+
+
+.shoes-bx{
+    position: relative;
+    width: 100%;
+    padding: 10px 0px;
+    background: rgb(240, 240, 240);
+}
+.shoes-bx .card-bx{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+}
+.shoes-bx .card-bx .card{
+    position: relative;
+    padding: 0;
+    background: none;
+    border: none;
+    border-radius: 0px;
+    flex-direction: row;
+    perspective: 1000px;
+}
+.shoes-bx .card-bx .card .prd-card{
+    position: relative;
+    width: 100%;
+    background: white;
+}
+.shoes-bx .card-bx .card .img-bx{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+
+}
+.shoes-bx .card-bx .card .img-bx::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#d99bff;
+    left: 0;
+    top: 0;
+    clip-path: circle(50px at 100% 0%);
+    transition: 0.5s all ease-in-out;
+    border-radius: 0px;
+}
+.shoes-bx .card-bx .card .img-bx img{
+    position: relative;
+    width: 100%;
+    height: 170px;
+    object-fit: contain;    
+    transition: 0.3s ease-in-out;
+}
+.shoes-bx .card-bx .card:hover .img-bx::before{
+    clip-path: circle(150px at 100% 0%);
+}
+.shoes-bx .card-bx .card:hover .img-bx img{
+    transform: rotate(-30deg);
+}
+
+.shoes-bx .card-bx .card .text-bx{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    background: none;
+}
+.shoes-bx .card-bx .card .text-bx h5{
+    position: relative;
+    width: 100%;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: 'raleway',sans-serif;
+    margin-bottom: 5px;
+}
+.shoes-bx .card-bx .card .text-bx h3{
+    position: relative;
+    width: 100%;
+    font-size: 1.8em;
+    font-family: 'montserrat',sans-serif;
+    margin-bottom:0px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.shoes-bx .card-bx .card  .btn-bx{
+    position: relative;
+    width: auto;
+    display: grid;
+    align-content: center;
+    background: #4c0778;
+    padding: 10px;
+    transform: rotateY(90deg);
+    opacity: 0;
+    transform-origin: left;
+    transition: 0.3s ease-in-out;
+}
+.shoes-bx .card-bx .card .btn-bx button{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2), -2px -2px 5px rgba(255, 255, 255, 0.2);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    outline: none;
+    margin: 5px 0px;
+}
+.shoes-bx .card-bx .card .btn-bx button:hover{
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.4), -1px -1px 2px rgba(255, 255, 255, 0.4);
+}
+.shoes-bx .card-bx .card .btn-bx button:active{
+    transform: scale(0.96);
+}
+.shoes-bx .card-bx .card:hover .btn-bx{
+    opacity: 1;
+    transform: rotateY(0);
+}

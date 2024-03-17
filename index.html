@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopMart</title>
+
+    <!-- Bootstrap Link  -->
+    <link rel="stylesheet" href="assests/bootstrap/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+
+    
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="assests/fontawesome/css/all.css">
+
+
+    <!-- jquery link -->
+    <link rel="stylesheet" href="assests/js/jquery.js">
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <!-- CSS link here -->
+    <link rel="stylesheet" href="assests/css/ecommer-page.css">
+
+    <!-- Mobile friendly styling -->
+    <link rel="stylesheet" href="assests/css/mobile-friendly.css">
+</head>
+<body>
+    
+    <div class="top-menu">
+        <section class="container menu_logo">
+            <div class="row">
+                <div class="col-md-3 logo">
+                    <h4><i class="fa-solid fa-bars" id="tgl_btn"></i> Shopmart</h4>
+                </div>
+                <!-- logo end here -->
+
+                <div class="search-bx col-md-5">
+                    <form action="">
+                        <div class="box">
+                            <input type="text" placeholder="Search Anything Here">
+                            <button><i class="fa-solid fa-search"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <!-- search-bx end here -->
+
+                <div class="col-md-4 menu">
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-user-circle"></i> Username</a></li>
+                        <li><button>logout <i class="fa-solid fa-sign-out"></i></button></li>
+                    </ul>
+                </div>
+                <!-- menu end here -->
+
+                
+
+            </div>
+            <!-- row end here -->
+        </section>
+        <!-- container end here -->
+
+        <section class="container-fluid menu-item">
+            <ul id="menu_list">
+                <li><i class="fa-solid fa-chair"></i> Furniture Collection <i class="fa-solid fa-angle-down"></i></li>
+                <li><i class="fa-solid fa-football"></i> Sports kits and equiments <i class="fa-solid fa-angle-down"></i></li>
+                <li><i class="fa-solid fa-home"></i> Home Appliances <i class="fa-solid fa-angle-down"></i></li>
+                <li><i class="fa-solid fa-bolt-lightning"></i> Electonics Tools <i class="fa-solid fa-angle-down"></i></li>
+                <li><i class="fa-solid fa-shirt"></i> Latest Dress Collection<i class="fa-solid fa-angle-down"></i></li>
+            </ul>
+        </section>
+        <!-- menu-item end here -->
+
+
+        <section id="slider">
+            <div class="slide_img">
+                <h4>Get best discount, Upto</h4>
+                <h1> 20% off</h1>
+                
+                
+            </div>
+            <div class="slide_img">
+                <img id="bg-img" src="assests/img/top-view-truck-boxes.jpg" alt="" width="100%"> 
+                <h4>Get Your product with</h4>
+                <h1>Fast Delivery</h1>
+                
+            </div>
+
+            <div class="slide_img">
+                <h4>A to Z products</h4>
+                <h1>Brands</h1>
+            </div>
+            
+            <button id="prevBtn"><i class="fa-solid fa-arrow-left-long"></i></button>
+            <button id="nextBtn"><i class="fa-solid fa-arrow-right-long"></i></button>
+      
+    </section>
+
+    <!-- slider end here -->
+
+
+
+    </div>
+    <!-- ============================top-menu end here================================================================================= -->
+
+    
+    <section class="category">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 card-bx">
+                    <div class="card">
+                        <div class="text-bx">
+                            <h1>Shoes</h1>
+                            <h4>Nike Air</h4>
+                            <button>Know More <i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                        <!-- text-bx end here -->
+                        <img src="assests/img/png/shoes/shoes nike.png" alt="" width="100%">
+                        
+                    </div>
+                    <!-- card end here -->
+
+                    
+                </div>
+                <!-- col-md-4 end here -->
+
+
+
+                <div class="col-md-4 card-bx">
+                    <div class="card">
+                        <div class="text-bx">
+                            <h1>Order</h1>
+                            <h4>Daily Grocery</h4>
+                            <button>know more <i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                        <!-- text-bx end here -->
+                        <img src="assests/img/png/grocery.png" alt="" width="100%">
+                    </div>
+                    <!-- card end here -->
+                </div>
+                <!-- col-md-4 end here -->
+
+                
+
+                <div class="col-md-4 card-bx">
+                    <div class="card">
+                        <div class="text-bx">
+                            <h1>Polo</h1>
+                            <h4>New Tshirts</h4>
+                            <button>Know more <i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                        <!-- text-bx end here -->
+                        <img src="assests/img/png/clothes/tshirt.png" alt="" width="100%">
+                       
+                    </div>
+                    <!-- card end here -->
+                </div>
+                <!-- col-md-4 end here -->
+
+
+                <div class="col-md-5 card-bx">
+                    <div class="card">
+                        <div class="text-bx">
+                            <h1>Apple <i class="fa-brands fa-apple"></i></h1>
+                            <h4>IPhone 12 pro</h4>
+                            <button>Know more <i class="fa-solid fa-angle-right"></i></button>
+                        </div>
+                        <!-- text-bx end here -->
+                        <img src="assests/img/png/electronics/iPhone 12 Pro 6.1_ Mockup Front View.png" alt="" width="100%">
+                       
+                    </div>
+                    <!-- card end here -->
+                </div>
+                <!-- col-md-4 end here -->
+
+                <div class="col-md-7 card-bx">
+                    <div class="card">
+                        <div class="text-bx">
+                            <h1>Furniture</h1>
+                            <h4>Stylish and Classical Design</h4>
+                            <button>Know More</button>
+                        </div>
+                        <img src="assests/img/png/furniture/long sofa.png" alt="" width="100%">
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- row end here -->
+        </div>
+        <!-- container end here -->
+    </section>
+    <!-- ==========================section category end here ===========================================================-->
+
+
+    
+
+    
+    <section class="shoes-col">
+        <h4>New Shoes</h4>
+        <h1>Collection</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 card-bx">
+                    <div class="card">
+                        <div class="img-bx">
+                            <img src="assests/img/png/shoes/shoes-4.png" alt="" width="100%">
+                        </div>
+                        <!-- img-bx end here -->
+                        <div class="text-bx">
+                            <h3>Nike Max Shoes</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, odio?
+                            </p>
+                            
+                        </div>
+                        <div class="btn-bx">
+                            <button><i class="fa-solid fa-shopping-cart"></i></button>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <!-- btn-bx end here -->
+                        
+                        <!-- text-bx end here -->
+                    </div>
+                    <!-- card end here -->
+                </div>
+                <!-- card-bx end here -->
+
+
+
+                <div class="col-md-4 card-bx">
+                    <div class="card">
+                        <div class="img-bx">
+                            <img src="assests/img/png/shoes/shoes-5.png" alt="" width="100%">
+                        </div>
+                        <!-- img-bx end here -->
+                        <div class="text-bx">
+                            <h3>Nike Jordan Shoes</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, odio?
+                            </p>
+                            
+                        </div>
+                        <div class="btn-bx">
+                            <button><i class="fa-solid fa-shopping-cart"></i></button>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <!-- btn-bx end here -->
+                        
+                        <!-- text-bx end here -->
+                    </div>
+                    <!-- card end here -->
+                </div>
+                <!-- card-bx end here -->
+
+
+
+                <div class="col-md-4 card-bx">
+                    <div class="card">
+                        <div class="img-bx">
+                            <img src="assests/img/png/shoes/shoes1.png" alt="" width="100%">
+                        </div>
+                        <!-- img-bx end here -->
+                        <div class="text-bx">
+                            <h3>Nike Air Shoes</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, odio?
+                            </p>
+                            
+                        </div>
+                        <div class="btn-bx">
+                            <button><i class="fa-solid fa-shopping-cart"></i></button>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <!-- btn-bx end here -->
+                        
+                        <!-- text-bx end here -->
+                    </div>
+                    <!-- card end here -->
+                </div>
+                <!-- card-bx end here -->
+                
+            </div>
+            <!-- row end here -->
+        </div>
+        <!-- container end here -->
+
+        
+
+       
+    </section>
+    <!-- shoes-col end here -->
+    
+
+    <section class="banner-col">
+        <div class="container-fluid banner-con">
+            <div class="row justify-content-center">
+                <div class="col-md-5 text-bx">
+                    <h5>Check Out Adidas </h5>
+                    <h2>Sports Shoes</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi ad minima esse! Incidunt fugit ea nemo quisquam aliquam voluptates nostrum?
+                    </p>
+                    <button>Know More</button>
+                </div>
+                <!-- text-bx -->
+
+                <div class="col-md-7 img-bx">
+                    <img src="assests/img/png/shoes/shoes.png" alt="" width="100%">
+                </div>
+                
+            </div>
+            <!-- row end here -->
+        </div>
+        <!-- container end here -->
+
+        <div class="shoes-bx">
+            <div class="row">
+               
+                <div class="col-md-3 card-bx">
+                    <div class="card">
+                        <div class="prd-card">
+                            <div class="img-bx">
+                                <img src="assests/img/png/shoes/adidas-2.png" alt="" width="100%">
+                            </div>
+                            <div class="text-bx">
+                                <h5>Adidas Sneakers</h5>
+                                <h3>$123</h3>
+                            </div>
+                        </div>
+                        <!-- prd-card end here -->
+
+                        <div class="btn-bx">
+                            <button><i class="fa-solid fa-heart"></i></button>
+                            <button><i class="fa-solid fa-shopping-cart"></i></button>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <!-- btn-bx end here -->
+                    </div>
+                    <!-- card-end here -->
+                </div>
+                <!-- card-bx end here -->
+
+                <div class="col-md-3 card-bx">
+                    <div class="card">
+                        <div class="prd-card">
+                            <div class="img-bx">
+                                <img src="assests/img/png/shoes/adidas-5.png" alt="" width="100%">
+                            </div>
+                            <div class="text-bx">
+                                <h5>Adidas Sneakers</h5>
+                                <h3>$323</h3>
+                            </div>
+                        </div>
+                        <!-- prd-card end here -->
+
+                        <div class="btn-bx">
+                            <button><i class="fa-solid fa-heart"></i></button>
+                            <button><i class="fa-solid fa-shopping-cart"></i></button>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <!-- btn-bx end here -->
+                    </div>
+                    <!-- card-end here -->
+                </div>
+                <!-- card-bx end here -->
+
+                <div class="col-md-3 card-bx">
+                    <div class="card">
+                        <div class="prd-card">
+                            <div class="img-bx">
+                                <img src="assests/img/png/shoes/adidas-3.png" alt="" width="100%">
+                            </div>
+                            <div class="text-bx">
+                                <h5>Adidas Sneakers</h5>
+                                <h3>$200</h3>
+                            </div>
+                        </div>
+                        <!-- prd-card end here -->
+
+                        <div class="btn-bx">
+                            <button><i class="fa-solid fa-heart"></i></button>
+                            <button><i class="fa-solid fa-shopping-cart"></i></button>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <!-- btn-bx end here -->
+                    </div>
+                    <!-- card-end here -->
+                </div>
+                <!-- card-bx end here -->
+
+                <div class="col-md-3 card-bx">
+                    <div class="card">
+                        <div class="prd-card">
+                            <div class="img-bx">
+                                <img src="assests/img/png/shoes/adidas-4 1.png" alt="" width="100%">
+                            </div>
+                            <div class="text-bx">
+                                <h5>Running Shoes</h5>
+                                <h3>$123</h3>
+                            </div>
+                        </div>
+                        <!-- prd-card end here -->
+
+                        <div class="btn-bx">
+                            <button><i class="fa-solid fa-heart"></i></button>
+                            <button><i class="fa-solid fa-shopping-cart"></i></button>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <!-- btn-bx end here -->
+                    </div>
+                    <!-- card-end here -->
+                </div>
+                <!-- card-bx end here -->
+
+               
+
+                
+
+                
+            </div>
+            <!-- row end here -->
+        </div>
+        <!-- shoes-bx -->
+    </section>
+
+
+
+    <section class="clothes">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 card-bx">
+                    <div class="card">
+                        
+                        <div class="img-bx col-md-6">
+                            <img src="assests/img/png/clothes/model.png" alt="" width="100%">
+                        </div>
+                        <!-- img-bx end here -->
+
+                        <div class="text-bx col-md-6">
+                            <h4>New Arrival</h4>
+                            <h1>Clothings</h1>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit, Iste nihil fugit dignissimos.
+                            </p>
+                            <button>Check Out <i class="fa-solid fa-arrow-right-long"></i></button>
+                        </div>
+                        <!-- text-bx end here -->
+                        
+                    </div>
+                    <!-- card end here -->
+                </div>
+                <!-- card-bx end here -->
+            </div>
+            <!-- row end here -->
+        </div>
+        <!-- container  end here -->
+    </section>
+    <!-- ===============clothes end here============================================================================================================================================================= -->
+
+    <section class="clothes-bx">
+        <div class="containers container">
+            <div class="row">
+
+                <div class="col-md-4 card-holder">
+                    <div class="card-bx">
+                        <div class="img-bx">
+                            <img src="assests/img/png/clothes/tshirt5.png" alt="" width="100%">
+                        </div>
+                        <div class="text-bx">
+                            <h4>Zudio Hoodie <span>$200</span></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, ut!
+                            </p>
+                            
+                        </div>
+                        <!-- text-bx end here -->
+    
+                        <div class="btn-bx">
+                            <button><i class="fa-solid fa-heart"></i></button>
+                            <button><i class="fa-solid fa-shopping-cart"></i></button>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <!-- btn-bx end here -->
+                    </div>
+                    <!-- card-bx end here -->
+                </div>
+                <!-- card-holder end here -->
+
+                <div class="col-md-4 card-holder">
+                    <div class="card-bx">
+                        <div class="img-bx">
+                            <img src="assests/img/png/clothes/rshirt-2.png" alt="" width="100%">
+                        </div>
+                        <div class="text-bx">
+                            <h4>Zudio Tshirt <span>$100</span></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, ut!
+                            </p>
+                            
+                        </div>
+                        <!-- text-bx end here -->
+                        <div class="btn-bx">
+                            <button><i class="fa-solid fa-heart"></i></button>
+                            <button><i class="fa-solid fa-shopping-cart"></i></button>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <!-- btn-bx end here -->
+                    </div>
+                    <!-- card-bx end here -->
+                </div>
+                <!-- card-holder end here -->
+
+                <div class="col-md-4 card-holder">
+                    <div class="card-bx">
+                        <div class="img-bx">
+                            <img src="assests/img/png/clothes/tshirt-1.png" alt="" width="100%">
+                        </div>
+                        <div class="text-bx">
+                            <h4>Polo Tshirt <span>$250</span></h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, ut!
+                            </p>
+                            
+                        </div>
+                        <!-- text-bx end here -->
+   
+    
+                        <div class="btn-bx">
+                            <button><i class="fa-solid fa-heart"></i></button>
+                            <button><i class="fa-solid fa-shopping-cart"></i></button>
+                            <button><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                        <!-- btn-bx end here -->
+                    </div>
+                    <!-- card-bx end here -->
+                </div>
+                <!-- card-holder end here -->
+
+                
+                
+
+            </div>
+            <!-- row end here -->
+
+        </div>
+        <!-- container end here -->
+    </section>
+    <!--==================================== clothes-bx end here==================================================================================== -->
+    
+    
+
+
+    <section class="offer-banner">
+        <div class="container">
+            <h2>Get Upto 50% off on All products</h2>
+            <h1>Black Friday Sale</h1>
+            
+            <div class="clock">
+                <h5><span id="days">30</span> Days</h5>
+                <h5><span id="hrs">24</span> hrs</h5>
+                <h5><span id="mins">60</span> min</h5>
+                <h5><span id="secs">60</span> sec</h5>
+            </div>
+            <!-- clock end here -->
+            <h3>Limited Period Offer</h3>
+        </div>
+        <!-- container-end here -->
+
+    </section>
+
+    <!-- offer banner end here ============================================================================= -->
+
+    <section class="offer-products">
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+                <div class="col-md-6 card-bx">
+                    <div class="card">
+                        <div class="img-bx" id="prev_bx">
+                            <img id="prev_img" src="assests/img/png/furniture/pink chair.png" alt="" width="100%">
+                        </div>
+                        <!-- img-bx end here -->
+                        <div class="text-bx">
+                            <span>Black Friday Sale</span>
+                            <h1>Stylish Chair</h1>
+                            <p>
+                                furniture sale get upto 50% to 60% off on furniture
+                            </p>
+                            <button>Buy Now <i class="fa-solid fa-shopping-cart"></i></button>
+
+                            <div class="img-box">
+                                <img src="assests/img/png/furniture/pink chair.png" alt="" width="100px" data-bg="pink" class="swap__img">
+                                <img src="assests/img/png/furniture/black sofa chair.png" alt="" width="100px" data-bg="#8d8980" class="swap__img">
+                                <img src="assests/img/png/furniture/grey chair sofa.png" alt="" width="100px" data-bg="#f0f0f0" class="swap__img">
+                            </div>
+                            <!-- img-box end here -->
+                        </div>
+                        <!-- text-bx end here -->
+                    </div>
+                    <!-- card end here -->
+                </div>
+                <!-- card-bx end here -->
+
+
+                <div class="col-md-6 card-bx">
+                    <div class="card">
+                        <div class="img-bx" id="prev_bx_2">
+                            <img src="assests/img/png/furniture/chai and table.png" id="prev_img_2" width="100%" >
+                        </div>
+                        <!-- img-bx end here -->
+                        <div class="text-bx">
+                            <span>Black Friday Sale</span>
+                            <h1>Classic Chair</h1>
+                            <p>
+                                furniture sale get upto 50% to 60% off on furniture
+                            </p>
+                            <button>Buy Now <i class="fa-solid fa-shopping-cart"></i></button>
+
+                            <div class="img-box">
+                                <img src="assests/img/png/furniture/chai and table.png" alt="" width="100px" data-bg="#ffd713" class="swap_img">
+                                <img src="assests/img/png/furniture/white chair.png" alt="" width="100px" data-bg="#aaa" class="swap_img">
+                                <img src="assests/img/png/furniture/yellow chair.png" alt="" width="100px" data-bg="#fff1aa" class="swap_img">
+                            </div>
+                            <!-- img-box end here -->
+                        </div>
+                        <!-- text-bx end here -->
+                    </div>
+                    <!-- card end here -->
+                </div>
+                <!-- card-bx end here -->
+            </div>
+            <!-- row end here -->
+        </div>
+        <!-- container-fluid end here -->
+
+    </section>
+    <!-- offer-products end here -->
+
+    <section class="sofa-banner">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-bx">
+                    <h3>Check out Furniture store</h3>
+                    <h1 id="targetText">New <span>Stylish</span>Couch</h1>
+                    
+                    <button>Know More <i class="fa-solid fa-arrow-right-long"></i></button>
+                </div>
+                <!-- text-bx -->
+
+                <div class="col-md-6 img-bx">
+                    <img src="assests/img/png/furniture/long sofa.png" id="sofa_prev" alt="" width="100%">
+                    <div class="img-carousel">
+                        <img src="assests/img/png/furniture/long sofa.png"  alt="" text-color="grey" class="sofa_slide" width="100px">
+                        <img src="assests/img/png/furniture/sofa.png" alt="" text-color="green" class="sofa_slide" width="100px">
+                        <img src="assests/img/png/furniture/grey sofa.png" alt="" text-color="#bbb" class="sofa_slide" width="100px">
+                    </div>
+                </div>
+            </div>
+            <!-- row end here -->
+        </div>
+        <!-- container  end here -->
+    </section>
+    <!-- ==================================sofa-banner end here======================================================================== -->
+
+
+    <section class="testimonial">
+        <h2> Client Testimonial</h2>
+        <div class="container-fluid">
+            <div class="btn-box">
+                <button id="btnPrev"><i class="fa-solid fa-arrow-left-long"></i></button>
+                <!-- <button id="btnNext"><i class="fa-solid fa-circle"></i></button> -->
+                <button id="btnNext"><i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+            <div class="carousel-box">
+                <div class="card">
+                    <div class="img-bx">
+                        <img src="assests/img/png/user/avatar-design (1).png" alt="" width="100px">
+                    </div>
+                    <!-- img-bx end here -->
+    
+                    <div class="text">
+                        <h1>John Smith</h1>
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem animi deserunt suscipit nemo perspiciatis consectetur doloremque. Fugiat accusamus atque maiores.
+                        </p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- card end here -->
+    
+                <div class="card">
+                    <div class="img-bx">
+                        <img src="assests/img/png/user/avatar-design (2).png" alt="" width="100px">
+                    </div>
+                    <!-- img-bx end here -->
+    
+                    <div class="text">
+                        <h1>Lisa Snow</h1>
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem animi deserunt suscipit nemo perspiciatis consectetur doloremque. Fugiat accusamus atque maiores.
+                        </p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- card end here -->
+        
+                <div class="card">
+                    <div class="img-bx">
+                        <img src="assests/img/png/user/avatar-design (3).png" alt="" width="100px">
+                    </div>
+                    <!-- img-bx end here -->
+    
+                    <div class="text">
+                        <h1>Harry White</h1>
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem animi deserunt suscipit nemo perspiciatis consectetur doloremque. Fugiat accusamus atque maiores.
+                        </p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- card end here -->
+        
+                <div class="card">
+                    <div class="img-bx">
+                        <img src="assests/img/png/user/avatar-design.png" alt="" width="100px">
+                    </div>
+                    <!-- img-bx end here -->
+    
+                    <div class="text">
+                        <h1>Mary Spector</h1>
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem animi deserunt suscipit nemo perspiciatis consectetur doloremque. Fugiat accusamus atque maiores.
+                        </p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- card end here -->
+    
+                
+                <div class="card">
+                    <div class="img-bx">
+                        <img src="assests/img/png/user/man.png" alt="" width="100px">
+                    </div>
+                    <!-- img-bx end here -->
+    
+                    <div class="text">
+                        <h1>Sam Williamson</h1>
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem animi deserunt suscipit nemo perspiciatis consectetur doloremque. Fugiat accusamus atque maiores.
+                        </p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- card end here -->
+    
+    
+                <div class="card">
+                    <div class="img-bx">
+                        <img src="assests/img/png/user/human.png" alt="" width="100px">
+                    </div>
+                    <!-- img-bx end here -->
+    
+                    <div class="text">
+                        <h1>Gwen Stacy</h1>
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem animi deserunt suscipit nemo perspiciatis consectetur doloremque. Fugiat accusamus atque maiores.
+                        </p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- card end here -->
+    
+                <div class="card">
+                    <div class="img-bx">
+                        <img src="assests/img/png/user/detective.png" alt="" width="100px">
+                    </div>
+                    <!-- img-bx end here -->
+    
+                    <div class="text">
+                        <h1>Danny</h1>
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem animi deserunt suscipit nemo perspiciatis consectetur doloremque. Fugiat accusamus atque maiores.
+                        </p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- card end here -->
+    
+                <div class="card">
+                    <div class="img-bx">
+                        <img src="assests/img/png/user/businessman.png" alt="" width="100px">
+                    </div>
+                    <!-- img-bx end here -->
+    
+                    <div class="text">
+                        <h1>Alvarto James</h1>
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem animi deserunt suscipit nemo perspiciatis consectetur doloremque. Fugiat accusamus atque maiores.
+                        </p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- card end here -->
+    
+                <div class="card">
+                    <div class="img-bx">
+                        <img src="assests/img/png/user/bald.png" alt="" width="100px">
+                    </div>
+                    <!-- img-bx end here -->
+    
+                    <div class="text">
+                        <h1>Sam Roy</h1>
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem animi deserunt suscipit nemo perspiciatis consectetur doloremque. Fugiat accusamus atque maiores.
+                        </p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- card end here -->
+    
+                <div class="card">
+                    <div class="img-bx">
+                        <img src="assests/img/png/user/women.png" alt="" width="100px">
+                    </div>
+                    <!-- img-bx end here -->
+    
+                    <div class="text">
+                        <h1>Lucy William</h1>
+                        <i class="fa-solid fa-quote-left quote-icon"></i>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem animi deserunt suscipit nemo perspiciatis consectetur doloremque. Fugiat accusamus atque maiores.
+                        </p>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- card end here -->
+        
+        
+            </div>
+        </div>
+        <!-- container-fluid end here -->
+    
+    </section>
+    <!-- Testimonial End here -->
+
+
+    <section class="contact-page">
+        <div class="contact-con container">
+            <div class="row">
+                <div class="col-md-7 form-bx">
+                    <h4><span>Don't Hesitate</span></h4>
+                    <h2>Ask Your Query</h2>
+                    <form action="">
+                        <div class="data-bx">
+                            <div class="input-bx">
+                                <input type="text" required>
+                                <span>Fullname <i class="fa-solid fa-user"></i></span>
+                            </div>
+                            <!-- input-bx end here -->
+
+                            <div class="input-bx">
+                                <input type="email" required>
+                                <span>Phone <i class="fa-solid fa-mobile"></i></span>
+                            </div>
+                            <!-- input-bx end here -->
+
+                            
+                        </div>
+                        <!-- data-bx end here  -->
+
+                        <div class="data-bx">
+                            <div class="input-bx">
+                                <input type="email" required>
+                                <span>Email Address <i class="fa-solid fa-at"></i></span>
+                            </div>
+                            <!-- input-bx end here -->
+                        </div>
+                        <div class="data-bx">
+                            <div class="input-bx">
+                                <textarea name="" id="">
+
+                                </textarea>
+                                <span style="padding: 10px 10px 5px;">Write Question Here <i class="fa-solid fa-question-circle"></i></span>
+                            </div>
+                            <!-- input-bx end here -->
+                        </div>
+                        <!-- data-bx -->
+                    </form>
+                </div>
+                <!-- form-bx end here -->
+
+                <div class="col-md-5 text-bx">
+                    <!-- <h4>Contact us</h4> -->
+                    <h1>Get In Touch</h1>
+
+                    <ul>
+                        <li><i class="fa-solid fa-map-marker"></i> <br> <span>Mumbai</span></li>
+                        <li><i class="fa-solid fa-phone"></i><br> <span>Call us</span></li>
+                        <li><i class="fa-solid fa-envelope"></i><br> <span>E-Mail Us</span></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- row end here -->
+        </div>
+        <!-- container end here -->
+    </section>
+
+
+    <section class="footer">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-3 menu-bx">
+                    <ul>
+                        
+                        <li><a href=""><i class="fa-solid fa-shirt"></i> Clothings</a></li>
+                        <li><a href=""><i class="fa-solid fa-home"></i> Home Appliances</a></li>
+                        <li><a href=""><i class="fa-solid fa-bolt-lightning"></i> Electonic store</a></li>
+                        <li><a href=""><i class="fa-solid fa-leaf"></i> Grocery</a></li>
+                    </ul>
+                </div>
+                <!-- menu-bx end here -->
+                <div class="col-md-2 menu-bx">
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-info-circle"></i> About</a></li>
+                        <li><a href=""><i class="fa-solid fa-mobile"></i> Contact</a></li>
+                        <li><a href=""><i class="fa-solid fa-question"></i> Ask Query</a></li>
+                    </ul>
+                </div>
+                <!-- menu-bx end here -->
+                <div class="col-md-2 menu-bx">
+                    <ul>
+                        <li><a href=""><i class="fa-brands fa-facebook-square"></i> Facebook</a></li>
+                        <li><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li><a href=""><i class="fa-brands fa-twitter-square"></i> Twitter</a></li>
+                        <li><a href=""><i class="fa-solid fa-envelope"></i> Email Us</a></li>
+                        
+                        
+                    </ul>
+                </div>
+                <!-- menu-bx end here -->
+
+                <div class="col-md-4 menu-bx">
+                    <form action="">
+                        <h4>Newsletter</h4>
+                        <input type="text" placeholder="Email Address">
+                        <button>Subscribe <i class="fa-solid fa-bell"></i></button>
+                    </form>
+                </div>
+                <!-- menu-bx end here -->
+            </div>
+            <!-- row end here -->
+        </div>
+
+        <!-- container end here -->
+    </section>
+
+    <!-- js link -->
+    <script src="assests/js/slider.js"></script>
+    <script src="assests/js/timer.js"></script>
+    <script src="assests/js/image-swapper.js"></script>
+    <script src="assests/js/card-slider.js"></script>
+    <script src="assests/js/toggle_menu.js"></script>
+</body>
+</html>

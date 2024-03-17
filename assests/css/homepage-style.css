@@ -1,0 +1,434 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p,ul,.row{
+    margin: 0;
+    padding: 0;
+}
+.uper-sec{
+    position: relative;
+    width: 100%;
+    background: white;
+}
+.uper-sec .first-con{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px;
+    display: grid;
+    align-content: center;
+}
+.uper-sec .first-con .logo{
+    position: relative;
+    width: 100%;
+    display: grid;
+    align-content: center;
+}
+.uper-sec .first-con .logo h4{
+    position: relative;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 1.8em;
+    color: grey;
+}
+.uper-sec .first-con .logo h4 span{
+    color: black;
+}
+.uper-sec .first-con .search-bx{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    
+}
+.uper-sec .first-con .search-bx .search-field{
+    position: relative;
+    width: 100%;
+    border: 1.5px solid grey;
+    display: flex;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.uper-sec .first-con .search-bx .search-field input{
+    position: relative;
+    width: 100%;
+    border: none;
+    background: none;
+    border-radius: 0;
+    outline: none;
+    padding: 6px 10px;
+}
+.uper-sec .first-con .search-bx .search-field input:focus .search-bx{
+    border-color: black;
+}
+.uper-sec .first-con .search-bx .search-field button{
+    position: relative;
+    width: auto;
+    padding: 6px 10px;
+    border: none;
+    background: none;
+    color: gray;
+    outline: none;
+}
+.uper-sec .first-con .search-bx .search-field button:hover{
+    color: black;
+}
+.uper-sec .first-con .search-bx .search-field button:active{
+  
+    transform: scale(0.8);
+}
+.uper-sec .first-con .link-bx{
+    position: relative;
+    width: 100%;
+    text-align: right;
+    display: grid;
+    align-content: center;
+    justify-items: end;
+}
+.uper-sec .first-con .link-bx a{
+    position: relative;
+    width: auto;
+    padding: 10px 15px;
+    background: none;
+    color:grey;
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 0px;
+    border-radius: 00px;
+    font-weight: 400;
+    border: 1.7px solid grey;
+    border-radius: 5px;
+}
+.uper-sec .first-con .link-bx a:hover{
+    border-color: black;
+    color: black;
+}
+/* uper-sec styling end here */
+
+
+
+.slider-sec{
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 30px;
+}
+.slider-sec .slider-bx{
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+.slider-sec .slider-bx .carousel,
+.slider-sec .slider-bx .carousel .carousel-inner,
+.slider-sec .slider-bx .carousel .carousel-item{
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+.slider-sec .slider-bx .carousel .carousel-item{
+    transition: 0.5s ease-in-out;
+    height: 500px;
+}
+.slider-sec .slider-bx .carousel .carousel-item img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.slider-sec .slider-bx .carousel .carousel-item .caption-bx{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    text-align: left;
+    padding: 10px;
+    background: rgba(0,0,0, 0.0);
+    color: white;
+    display: grid;
+    align-content: center;
+    margin: 0;
+  
+}
+.slider-sec .slider-bx .carousel .carousel-item .carousel-caption{
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding:40px 40px;
+    background-color: rgba(0,0,0, 0.1);
+    bottom: 0;
+}
+.slider-sec .slider-bx .carousel .carousel-item .carousel-caption h3{
+    font-size: 1.2em;
+    font-family: 'montserrat',sans-serif;
+    font-weight: 300;
+}
+.slider-sec .slider-bx .carousel .carousel-item .carousel-caption h1{
+    font-size: 3em;
+    text-transform: capitalize;
+    font-weight: 300;
+}
+.slider-sec .slider-bx .carousel .carousel-item .caption-bx h3{
+    position: relative;
+    width: 100%;
+    font-family: 'montserrat',sans-serif;
+    margin-bottom: 0px;
+    font-size: 1.8em;
+    font-weight: 300;
+}
+.slider-sec .slider-bx .carousel .carousel-item .caption-bx h1{
+    position: relative;
+    font-size: 5em;
+    font-family: 'raleway',sans-serif;
+}
+.slider-sec .slider-bx .carousel .carousel-item .caption-bx p{
+    font-size: 1.4em;
+    text-transform: capitalize;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.slider-sec .slider-bx .carousel .carousel-item .caption-bx button{
+    position: relative;
+    width: auto;
+    align-items: center;
+    border: none;
+    background: white;
+    box-shadow: 4px 4px 8px rgba(0,0,0, 0);
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-family: 'montserrat',sans-serif;
+    border-radius: 50px;
+}
+
+.slider-sec .slider-bx .carousel .carousel-item .caption-bx button:hover{
+    background: #222;
+    color: white;
+}
+
+
+.slider-sec .slider-bx .carousel .carousel-indicators{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.slider-sec .slider-bx .carousel .carousel-indicators li{
+    text-indent:0pc;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    align-content: center;
+    border-radius: 100%;
+}
+/* Slider-sec end here */
+
+
+.Cardbox-carousel{
+    position: relative;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.Cardbox-carousel .owl_carousel{
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+.Cardbox-carousel .owl_carousel .item{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    padding: 0px;
+    box-shadow: 2px 2px 6px rgba(0,0,0, 0.3);
+    margin-bottom: 20px;
+    background: #8febfa;
+}
+.Cardbox-carousel .owl_carousel .item img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.Cardbox-carousel .owl_carousel .item .text-bx{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    background: rgba(0,0,0, 0.5);
+    color: white;
+    font-family: 'satisfy',sans-serif;
+    font-size: 1.3em;
+    opacity: 0;
+    transition: 0.3s;
+}
+.Cardbox-carousel .owl_carousel .item .text-bx:hover{
+    opacity: 1;
+}
+.owl-dots{
+    display: none !important;
+}
+
+
+
+/* Cardbox end here */
+
+
+
+.mobile-banner{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    align-content: center;
+    background: whitesmoke;
+    padding: 0px;
+    padding-bottom: 0px;
+}
+.mobile-banner .banner{
+    position: relative;
+    width: 100%;
+}
+.mobile-banner .banner .text-left{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
+.mobile-banner .banner .text-left h4{
+    position: relative;
+    font-family: 'satisfy',sans-serif;
+    font-size: 1.2em;
+}
+.mobile-banner .banner .text-left h1{
+    position: relative;
+    font-size: 3em;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+.mobile-banner .banner .text-left h1 span{
+    color: #009bb3;
+}
+
+.mobile-banner .banner .img-bx{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    padding: 0;
+}
+.mobile-banner .banner .img-bx img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.mobile-banner .banner .img-bx::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #8febfa;
+    clip-path: circle(150px at 50% 50%);
+}
+
+
+
+.mobile-banner .banner .text_right{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    align-content: end;
+    text-align: left;
+    padding: 10px 20px;
+}
+.mobile-banner .banner .text_right p{
+    font-size: 1em;
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.05em;
+    font-weight: 300;
+}
+
+/*============================= Mobile Banner End here================================================= */
+
+
+.card-bx{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    background: #ececec;
+}
+.big-img-con{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: none;
+    padding: 0;
+    padding: 10px;
+}
+.big-img-con img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.card-bx .small-img-con{
+    position: relative;
+    width: 100%;
+    height: auto;  
+}
+
+.card-bx .big-img-con .text-bx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px;
+    text-align: left;
+}
+.card-bx .big-img-con .text-bx h1{
+    position: relative;
+    width: 100%;
+    font-size: 3em;
+    font-weight: 600;
+    color: grey;
+   
+}
+.card-bx .small-img-con .img-con{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.card-bx .small-img-con .img-con .card img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;   
+}
+.card-bx .small-img-con .img-con .card{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background: none;
+    border: none;
+    border-radius: 0;   
+    text-align: center; 
+}
+
+
